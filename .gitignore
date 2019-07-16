@@ -1,0 +1,6 @@
+**.bat
+**.sh
+**.bash
+output/
+**/__pycache__/**
+**.vscode/**
