@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="/web/css/index.css">
+
+    <title>Mode Creator</title>
+
+</head>
+<body>
+
+    <div id="content">
+        <h1>MODE CREATOR</h1>
+        
+        <div id="links">
+            <div id="input">
+                <div class="input">
+                    <input type="text" placeholder="Link">
+                    <button><img src="/web/images/search icon.png" alt=""></button>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Link">
+                    <button><img src="/web/images/search icon.png" alt=""></button>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Link">
+                    <button><img src="/web/images/search icon.png" alt=""></button>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <div id="add">
+                        <button id="add" onclick="add()"><img src="/web/images/plus icon.png" alt=""></button>
+                </div>
+                <div id="ok_cancel">
+                    <button>OK</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function add(){
+            var node = '<div class="input"><input type="text" placeholder="Link"><button><img src="/web/images/search icon.png" alt=""></button></div>'
+            document.getElementById("input").innerHTML += node
+        }
+    </script>
+
+</body>
+</html>

@@ -1,10 +1,13 @@
 body{
     background-color: #4b4b4b;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 h1{
@@ -12,28 +15,31 @@ h1{
     margin: 15px;
 }
 
-#input{
+#links{
+    width: 80%;
+}
+
+#links #input{
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     box-shadow: 0 0 35px 0px #000000cc;
-    width: 80%;
 }
 
-.input{
+#links .input{
     display: flex;
     flex-direction: row;
 }
 
-.input button{
+#links .input button{
     width: 5%;
 }
 
-.input img{
+#links .input img{
     width: 20px;
 }
 
-input{
+#links input{
     padding: 10px;
     height: 40px;
     border: 1px solid #8080805c;
@@ -42,13 +48,23 @@ input{
     width: 95%;
 }
 
-#add{
-    margin-top: 30px;
-    height: 35px;
-    font-size: 15px;
-    width: 80%;
-    box-shadow: 0px 5px 35px 0px #000000cc;
+#links #add img{
+    height: 40px;
     background: #ffffff94;
-    padding: 0px;
-    border: 0px;
+}
+
+#content #buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#content #buttons #add{
+    align-self: flex-start;
+}
+#content #buttons #ok_cancel{
+    align-self: flex-end;
+}
+#content #buttons #ok_cancel button{
+    height: 40px;
+    background: #ffffff;
 }
